@@ -1,0 +1,87 @@
+body {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  background-color: #011f3f;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+#score {
+  margin-top: 5px;
+  font-size: 1.2em;
+}
+
+#start-btn {
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#start-btn:hover {
+  background-color: #45a049;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.btn {
+  width: 100%;
+  padding-bottom: 100%; /* To make square */
+  position: relative;
+  border-radius: 15px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.2s;
+}
+
+.btn.red {
+  background-color: #f44336;
+}
+.btn.blue {
+  background-color: #2196f3;
+}
+.btn.green {
+  background-color: #4caf50;
+}
+.btn.yellow {
+  background-color: #ffeb3b;
+}
+
+.btn.pressed {
+  box-shadow: 0 0 20px #fff;
+  filter: brightness(1.4);
+  opacity: 0.6;
+}
+
+.game-over {
+  background-color: #8b0000 !important;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #start-btn {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+}
