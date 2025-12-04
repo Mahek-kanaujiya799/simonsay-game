@@ -1,3 +1,3 @@
-# Simon say Game on local
+# Simon say Game
 
 This project is my first game.
